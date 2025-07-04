@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parketera – Напольные покрытия, укладка и доставка</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-3k220THiRHFqRSbVSSMzdg3NofM8JrIoYNewc19hXtOD87o5iV/mQJu1NvXwWyMf" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        /* ====== CUSTOM STYLES ====== */
+        html {
+            scroll-behavior: smooth;
+        }
+        #hero {
+            background: url('https://images.unsplash.com/photo-1582130831093-26cfab78c2e4?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+            min-height: 100vh;
+        }
+        .category-card {
+            transition: transform .3s;
+        }
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card {
+            transition: transform .2s;
+        }
+        .product-card:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#hero">Parketera</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#catalog">Каталог</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Услуги</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+      </ul>
+      <a href="https://wa.me/994101234567?text=Здравствуйте%2C%20интересует%20напольное%20покрытие" class="btn btn-success ms-lg-3 d-none d-lg-block"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header id="hero" class="d-flex align-items-center text-center text-white">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Паркет, Ламинат, Инженерная доска</h1>
+    <p class="lead mb-4">Продажа, доставка и профессиональная укладка по всему Азербайджану</p>
+    <a href="#catalog" class="btn btn-primary btn-lg">Смотреть каталог</a>
+    <a href="https://wa.me/994101234567?text=Здравствуйте%2C%20интересуют%20ваши%20услуги%20по%20укладке" class="btn btn-success btn-lg ms-3"><i class="bi bi-whatsapp"></i> Написать в WhatsApp</a>
+  </div>
+</header>
+
+<!-- ================= CATEGORIES ================= -->
+<section id="categories" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Категории покрытий</h2>
+    <div class="row g-4">
+
+      <!-- Паркет -->
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card border-0 category-card h-100 text-center">
+          <img src="https://images.unsplash.com/photo-1615874959219-9b5b32d15579?auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Паркет">
+          <div class="card-body p-2">
+            <h6 class="card-title mb-0">Паркет</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ламинат -->
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card border-0 category-card h-100 text-center">
+          <img src="https://images.unsplash.com/photo-1505843408144-1404bb2a9dba?auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Ламинат">
+          <div class="card-body p-2">
+            <h6 class="card-title mb-0">Ламинат</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Инженерная доска -->
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card border-0 category-card h-100 text-center">
+          <img src="https://images.unsplash.com/photo-1616627452260-8fe282f65476?auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Инженерная доска">
+          <div class="card-body p-2">
+            <h6 class="card-title mb-0">Инженерная доска</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Массив -->
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card border-0 category-card h-100 text-center">
+          <img src="https://images.unsplash.com/photo-1582130831168-e07fc4f6fb3f?auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Массив">
+          <div class="card-body p-2">
+            <h6 class="card-title mb-0">Массив</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Клей -->
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card border-0 category-card h-100 text-center">
+          <img src="https://images.unsplash.com/photo-1586321604476-c910125cdb6a?auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Клей">
+          <div class="card-body p-2">
+            <h6 class="card-title mb-0">Клей</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Услуги -->
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card border-0 category-card h-100 text-center">
+          <img src="https://images.unsplash.com/photo-1600688599858-8b9e8f125d6b?auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Услуги">
+          <div class="card-body p-2">
+            <h6 class="card-title mb-0">Услуги</h6>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CATALOG ================= -->
+<section id="catalog" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Каталог товаров</h2>
+    <div class="row g-4">
+
+      <!-- PRODUCT EXAMPLE 1 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 product-card">
+          <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=60" class="card-img-top" alt="Ламинат Oak Light">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Ламинат Oak Light</h5>
+            <p class="card-text flex-fill">Класс 32 · Толщина 8 мм</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold fs-5">29 AZN/м²</span>
+              <a href="https://wa.me/994101234567?text=Здравствуйте%2C%20хочу%20заказать%20Ламинат%20Oak%20Light" class="btn btn-outline-success"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCT EXAMPLE 2 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 product-card">
+          <img src="https://images.unsplash.com/photo-1622519404710-633aa6c0e179?auto=format&fit=crop&w=600&q=60" class="card-img-top" alt="Паркет Дуб Натур">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Паркет Дуб Натур</h5>
+            <p class="card-text flex-fill">Селекция Натур · Твердый лак</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold fs-5">69 AZN/м²</span>
+              <a href="https://wa.me/994101234567?text=Здравствуйте%2C%20хочу%20заказать%20Паркет%20Дуб%20Натур" class="btn btn-outline-success"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCT EXAMPLE 3 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 product-card">
+          <img src="https://images.unsplash.com/photo-1507652955-f3f759af7a8b?auto=format&fit=crop&w=600&q=60" class="card-img-top" alt="Клей двухкомпонентный">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Клей двухкомпонентный</h5>
+            <p class="card-text flex-fill">Для паркета · Тара 10 кг</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold fs-5">55 AZN</span>
+              <a href="https://wa.me/994101234567?text=Здравствуйте%2C%20хочу%20заказать%20Клей%20двухкомпонентный" class="btn btn-outline-success"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TODO: Duplicate карточки по своему ассортименту -->
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Наши услуги</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 text-center p-3 border-0 shadow-sm">
+          <div class="card-body">
+            <i class="bi bi-hammer fs-1 text-primary mb-3"></i>
+            <h5 class="card-title">Профессиональная укладка</h5>
+            <p class="card-text">Опытные мастера, гарантия 2 года.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 text-center p-3 border-0 shadow-sm">
+          <div class="card-body">
+            <i class="bi bi-truck fs-1 text-primary mb-3"></i>
+            <h5 class="card-title">Доставка по стране</h5>
+            <p class="card-text">Быстро привезём на объект.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 text-center p-3 border-0 shadow-sm">
+          <div class="card-body">
+            <i class="bi bi-tape fs-1 text-primary mb-3"></i>
+            <h5 class="card-title">Бесплатный замер</h5>
+            <p class="card-text">Точный расчёт материалов.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 text-center p-3 border-0 shadow-sm">
+          <div class="card-body">
+            <i class="bi bi-chat-dots fs-1 text-primary mb-3"></i>
+            <h5 class="card-title">Дизайнерская консультация</h5>
+            <p class="card-text">Поможем подобрать стиль пола.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img src="https://images.unsplash.com/photo-1522706604294-ff97790e4606?auto=format&fit=crop&w=900&q=60" class="img-fluid rounded-4 shadow" alt="О нас">
+      </div>
+      <div class="col-lg-6">
+        <h2 class="mb-3">О компании Parketera</h2>
+        <p>Мы более 10 лет поставляем напольные покрытия ведущих европейских брендов и предоставляем полный комплекс услуг: от выбора материала до профессиональной укладки «под ключ».</p>
+        <ul class="list-unstyled">
+          <li><i class="bi bi-check-circle text-primary"></i> Сертифицированные материалы</li>
+          <li><i class="bi bi-check-circle text-primary"></i> Опытные мастера</li>
+          <li><i class="bi bi-check-circle text-primary"></i> Гарантия на монтаж</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Свяжитесь с нами</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <h5>Контакты</h5>
+        <p class="mb-1"><i class="bi bi-phone"></i> <a href="tel:+994101234567">+994 10 123 45 67</a></p>
+        <p class="mb-1"><i class="bi bi-whatsapp"></i> <a href="https://wa.me/994101234567?text=Здравствуйте" target="_blank">WhatsApp чат</a></p>
+        <p class="mb-1"><i class="bi bi-envelope"></i> info@parketera.az</p>
+        <p class="mb-3"><i class="bi bi-geo-alt"></i> Баку, проспект Азадлыг 123</p>
+        <a href="https://wa.me/994101234567?text=Здравствуйте%2C%20хочу%20оставить%20заявку" class="btn btn-success"><i class="bi bi-whatsapp"></i> Написать в WhatsApp</a>
+      </div>
+      <div class="col-md-6">
+        <!-- Google Maps iframe placeholder -->
+        <iframe class="w-100 rounded-4 shadow" height="250" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.8474572896796!2d49.83002731538338!3d40.37719447936986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307dc96019720d%3A0xe9f1bfe3f9e75be6!2z0JHQvtC00LTRgNCw0LvQuNC60LA!5e0!3m2!1sru!2saz!4v1622459475675!5m2!1sru!2saz"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="py-4 bg-dark text-white-50 text-center">
+  <div class="container">
+    © 2025 Parketera. Все права защищены.
+  </div>
+</footer>
+
+<!-- Bootstrap JS Bundle (with Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kKpTa3GYuJgp7wa9u0edPF5xshcxzoi8In6F8Bbo7U5FGfcPm/wZMtqaCdNZCwfE" crossorigin="anonymous"></script>
+
+</body>
+</html>
